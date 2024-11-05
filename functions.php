@@ -4,6 +4,8 @@
 function register_my_menu(){
      register_nav_menus( array(
          'header-menu' => __( 'Menu De Tete'),
+         'logged-in-menu' => __( 'Menu De Connexion' ),
+         'logged-out-menu' => __( 'Menu De Deconnexion' ),
          'footer-menu'  => __( 'Menu De Pied'),
      ) );
  }
