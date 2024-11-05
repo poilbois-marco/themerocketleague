@@ -8,16 +8,10 @@
         <?php the_title(); ?>
     </div>
     <article class="match-grid" >
-      <ul>
-        <li class="match-card">
-          <?php the_post_thumbnail( 'thumbnail' ); ?>
-          <?php the_field ("temps"); ?>
-        </li>
-        <li class="match-card">
-          <?php the_post_thumbnail( 'thumbnail' ); ?>
-          <?php the_field ("buts" ); ?>
-        </li>
-      </ul>
+      <div class="match-card">
+        <?php the_post_thumbnail( 'thumbnail' ); ?>
+        <?php the_field ("nom_equipe"); ?>
+      </div>
       <div class="content" >
         <?php the_content (); ?>
       </div>
@@ -25,5 +19,8 @@
 
   <?php endwhile ; ?>
 <?php endif; ?>
+
+<?php the_terms( $post->ID, 'temps', 'Temps : ' ); ?><br>
+<?php the_terms( $post->ID, 'buts', 'Buts : ' ); ?><br>
 
 <?php get_footer (); ?>
