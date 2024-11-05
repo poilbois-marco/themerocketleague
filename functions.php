@@ -1,4 +1,6 @@
 <?php
+// vignettes
+add_theme_support( 'post-thumbnails' );
 
 //ajouter une nouvelle zone de menu à mon thème
 function register_my_menu(){
@@ -10,7 +12,5 @@ function register_my_menu(){
      ) );
  }
  add_action( 'init', 'register_my_menu', 0 );
-
- // vignettes
  add_theme_support( 'post-thumbnails' );
  the_post_thumbnail('thumbnail');
