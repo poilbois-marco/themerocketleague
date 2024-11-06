@@ -83,6 +83,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="confirm_password">Confirmer le mot de passe :</label>
                 <input type="password" id="confirm_password" name="confirm_password" required>
             </p>
+            <p class="cgu-accept">
+                <input type="checkbox" id="cgu_acceptance" name="cgu_acceptance" required>
+                <label for="cgu_acceptance">J'ai lu et j'accepte les <a href="/cgu.php" target="_blank">Conditions Générales d'Utilisation</a></label>
+            </p>
             <p>
                 <input type="submit" value="S'inscrire">
             </p>
