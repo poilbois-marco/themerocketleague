@@ -43,57 +43,52 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main">
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <header class="entry-header">
-                <h1 class="entry-title"><?php the_title(); ?></h1>
-            </header>
+<div class="inscription">
+              
+    <h1><?php the_title(); ?></h1>
 
-            <div class="entry-content">
-                <?php
-                // Affichage des erreurs
-                if (!empty($errors)) {
-                    echo '<ul class="errors">';
-                    foreach ($errors as $error) {
-                        echo '<li>' . esc_html($error) . '</li>';
-                    }
-                    echo '</ul>';
-                }
-                ?>
+    <div class="entry-content">
+        <?php
+        // Affichage des erreurs
+        if (!empty($errors)) {
+            echo '<ul class="errors">';
+            foreach ($errors as $error) {
+                echo '<li>' . esc_html($error) . '</li>';
+            }
+            echo '</ul>';
+        }
+        ?>
+        <form method="post" action="">
+            <p>
+                <label for="pseudo">Pseudo :</label>
+                <input type="text" id="pseudo" name="pseudo" required>
+            </p>
+            <p>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </p>
+            <p>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </p>
+            <p>
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email">
+            </p>
+            <p>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </p>
+            <p>
+                <label for="confirm_password">Confirmer le mot de passe :</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </p>
+            <p>
+                <input type="submit" value="S'inscrire">
+            </p>
+        </form>
+    </div>
 
-                <form method="post" action="">
-                    <p>
-                        <label for="pseudo">Pseudo :</label>
-                        <input type="text" id="pseudo" name="pseudo" required>
-                    </p>
-                    <p>
-                        <label for="nom">Nom :</label>
-                        <input type="text" id="nom" name="nom" required>
-                    </p>
-                    <p>
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" id="prenom" name="prenom" required>
-                    </p>
-                    <p>
-                        <label for="email">Adresse e-mail :</label>
-                        <input type="email" id="email" name="email">
-                    </p>
-                    <p>
-                        <label for="password">Mot de passe :</label>
-                        <input type="password" id="password" name="password" required>
-                    </p>
-                    <p>
-                        <label for="confirm_password">Confirmer le mot de passe :</label>
-                        <input type="password" id="confirm_password" name="confirm_password" required>
-                    </p>
-                    <p>
-                        <input type="submit" value="S'inscrire">
-                    </p>
-                </form>
-            </div>
-        </article>
-    </main>
 </div>
 
 <?php get_footer(); ?>

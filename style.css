@@ -45,7 +45,7 @@ html, body {
 header {
     background-color: #1f2937;
     color: #ffffff;
-    /* padding-top: 60px; */
+    padding-top: 20px;
     transition: all 0.3s ease;
 }
 
@@ -197,7 +197,7 @@ footer nav ul li a {
 
 /* Page Connexion */
 
-.connexion {
+.connexion, .inscription {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
