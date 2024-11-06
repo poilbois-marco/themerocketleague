@@ -90,8 +90,6 @@ Template Name: Politique de Confidentialité
                 <li>Droit d'opposition : S'opposer au traitement de ses données pour des raisons légitimes.</li>
                 <li>Droit à la portabilité : Recevoir les données fournies dans un format structuré.</li>
             </ul>
-        </p>
-        <p>
             Pour exercer ces droits, l'Utilisateur peut contacter RLTeamMatch à l'adresse
             suivante : rlteammatch@gmail.com.
         </p>

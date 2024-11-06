@@ -15,6 +15,130 @@ body {
     padding: 0;
 }
 
+body.menu-open {
+    overflow: hidden;
+}
+
+/* Styles généraux du header */
+header {
+    background-color: #1f2937;
+    color: #ffffff;
+    /* padding-top: 60px; */
+    transition: all 0.3s ease;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.logo img {
+    max-height: 40px; /* Ajustez selon la taille de votre logo */
+}
+
+/* Bouton du menu (visible uniquement sur mobile) */
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Navigation */
+nav {
+    transition: all 0.3s ease;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-left: 1rem;
+}
+
+.menu-list a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+.menu-list a:hover {
+    color: #d1d5db;
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1f2937;
+        z-index: 1000;
+    }
+
+    nav.open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-list li {
+        margin: 1rem 0;
+    }
+
+    .menu-list a {
+        font-size: 1.5rem;
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    .menu-list a:hover {
+        background-color: #374151;
+    }
+}
+
 footer {
     background-color: black;
     color: white;
