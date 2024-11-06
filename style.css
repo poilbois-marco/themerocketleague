@@ -239,3 +239,141 @@ input[type="submit"]:hover {
     color: red;
     margin-bottom: 10px;
 }
+
+
+/* Page Profil */
+
+/* Conteneur principal */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Titre principal */
+.profile-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Carte de profil */
+.profile-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Photo de profil */
+.profile-picture {
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Nom de l'utilisateur */
+.profile-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Statistiques */
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.stat-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Section équipe */
+.user-team {
+    margin-bottom: 30px;
+}
+
+.user-team h2 {
+    margin-bottom: 10px;
+}
+
+.user-team img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Actions du profil */
+.profile-actions {
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button-password {
+    display: inline-block;
+    padding: 10px 20px;
+    border-color: #307FE2;
+    color: #307FE2;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.button-logout {
+    display: inline-block;
+    padding: 10px 20px;
+    border-color: #FFAD9F;
+    color: #FFAD9F;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-password:hover {
+    background-color: #307FE2;
+    color: white;
+}
+.button-logout:hover {
+    background-color: #FFAD9F;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .profile-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        margin: 10px 0;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
