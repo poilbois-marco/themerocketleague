@@ -32,7 +32,7 @@
                     'container'      => false,
                     'menu_class'     => 'menu-list',
                 ));
-                if (is_user_logged_in()) {
+                if (!is_user_logged_in()) {
                     // Menu pour les utilisateurs connectés
                     wp_nav_menu(array(
                         'theme_location' => 'logged-in-menu',
