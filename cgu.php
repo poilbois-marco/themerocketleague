@@ -54,12 +54,11 @@ Template Name: CGU
         <p>
             L'Utilisateur s'engage à utiliser RLTeamMatch de manière respectueuse et
             conforme aux lois. Sont strictement interdits :
-                ● Les comportements injurieux, diffamatoires, racistes, discriminatoires, ou
-                incitant à la haine ;
-                ● Toute tentative de piratage ou intrusion non autorisée dans le Site ou ses
-                bases de données ;
-                ● La diffusion de contenu non autorisé, protégé par des droits d'auteur, ou
-                illégal.
+            <ul>
+                <li>Les comportements injurieux, diffamatoires, racistes, discriminatoires, ou incitant à la haine ;</li>
+                <li>Toute tentative de piratage ou intrusion non autorisée dans le Site ou ses bases de données ;</li>
+                <li>La diffusion de contenu non autorisé, protégé par des droits d'auteur, ou illégal.</li>
+            </ul>
             En cas de non-respect de ces règles, RLTeamMatch se réserve le droit de
             suspendre ou de supprimer le compte de l'Utilisateur, sans préavis.
         </p>
