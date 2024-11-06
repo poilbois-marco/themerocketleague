@@ -19,6 +19,11 @@ body.menu-open {
     overflow: hidden;
 }
 
+.equipe-title {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 /* Bloquer le scroll horizontal */
 
