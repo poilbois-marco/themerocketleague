@@ -7,3 +7,33 @@ Description: theme sae 301
 Version: 0.1
 Tags: esport, gestion, rocke league, tournois
 */
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-content: center;
+}
+footer nav ul {
+  list-style-type: none;
+}
+footer nav ul li {
+    margin-bottom: 20px;
+}
+footer nav ul li a {
+    display: grid;
+    justify-content: center;
+    color: #F5F5F5;
+    text-decoration: none;
+}
+.footer-line {
+    border: 1px solid white;
+    width: 100%;
+}
