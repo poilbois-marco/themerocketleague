@@ -2,6 +2,7 @@
 <html>
   <head <?php language_attributes(); ?>>
     <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
@@ -23,14 +24,14 @@
             
             <!-- Menu de navigation -->
             <nav :class="{ 'open': isOpen }">
-                <?php 
+              <article class="main-navigation">
+                <?php
                 wp_nav_menu(array(
                     'theme_location' => 'header-menu',
                     'menu_id'        => 'header-menu',
                     'container'      => false,
                     'menu_class'     => 'menu-list',
                 ));
-
                 if (is_user_logged_in()) {
                     // Menu pour les utilisateurs connectés
                     wp_nav_menu(array(
@@ -49,8 +50,9 @@
                         'menu_class'     => 'menu-list',
                         'fallback_cb'    => false
                     ));
-                } 
+                }
                 ?>
+              </article>
             </nav>
         </div>
     </header>
